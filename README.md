@@ -18,7 +18,6 @@ Designed for reusable integration into embedded and IoT applications.
   - Longitude
   - UTC Time
 - Modular component structure (`gps.c` / `gps.h`)
-- FreeRTOS-based task handling
 - Clean and scalable driver architecture
 
 ---
@@ -27,16 +26,13 @@ Designed for reusable integration into embedded and IoT applications.
 
 - ESP32 Dev Module
 - UART-based GPS module (e.g., NEO-6M)
-- External antenna (optional)
 
 ---
 
 ## 💻 Software Stack
 
 - ESP-IDF
-- FreeRTOS
-- ESP-IDF UART Driver API
-- C Programming (Modular Driver Design)
+
 
 ---
 
@@ -49,6 +45,4 @@ Designed for reusable integration into embedded and IoT applications.
 | Parity    | None |
 | Stop Bits | 1 |
 
----
 
-## 📂 Project Structure
