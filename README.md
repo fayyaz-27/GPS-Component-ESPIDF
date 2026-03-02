@@ -1,11 +1,54 @@
-ESP-IDF template app
-====================
+# 📡 GPS Component for ESP32 (ESP-IDF)
 
-This is a template application to be used with [Espressif IoT Development Framework](https://github.com/espressif/esp-idf).
+## 🧭 Overview
 
-Please check [ESP-IDF docs](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html) for getting started instructions.
+This project implements a modular GPS driver component for ESP32 using **ESP-IDF**.  
+The system communicates with a UART-based GPS module and parses NMEA sentences to extract real-time location and time data.
 
-*Code in this repository is in the Public Domain (or CC0 licensed, at your option.)
-Unless required by applicable law or agreed to in writing, this
-software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.*
+Designed for reusable integration into embedded and IoT applications.
+
+---
+
+## ⚙️ Features
+
+- UART communication using ESP-IDF driver
+- NMEA sentence parsing (GPGGA / GPRMC)
+- Real-time extraction of:
+  - Latitude
+  - Longitude
+  - UTC Time
+- Modular component structure (`gps.c` / `gps.h`)
+- FreeRTOS-based task handling
+- Clean and scalable driver architecture
+
+---
+
+## 🛠️ Hardware Used
+
+- ESP32 Dev Module
+- UART-based GPS module (e.g., NEO-6M)
+- External antenna (optional)
+
+---
+
+## 💻 Software Stack
+
+- ESP-IDF
+- FreeRTOS
+- ESP-IDF UART Driver API
+- C Programming (Modular Driver Design)
+
+---
+
+## 🔌 UART Configuration (Example)
+
+| Parameter | Value |
+|-----------|--------|
+| Baud Rate | 9600 |
+| Data Bits | 8 |
+| Parity    | None |
+| Stop Bits | 1 |
+
+---
+
+## 📂 Project Structure
